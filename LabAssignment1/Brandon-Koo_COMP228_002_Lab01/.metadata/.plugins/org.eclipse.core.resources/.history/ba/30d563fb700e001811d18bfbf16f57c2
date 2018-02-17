@@ -1,0 +1,11 @@
+
+public class BasePlusCommissionEmployee {
+	public static void main(String[] args)
+	{
+		int EmployeeID;
+		String Fname;
+		String Lname;
+		double baseSalary = 200;
+		double grosssales;
+	}
+}

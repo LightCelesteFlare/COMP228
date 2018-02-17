@@ -1,0 +1,12 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class BasePlusCommissionEmployeeTest {
+
+	@Test
+	public void test() {
+		BasePlusCommissionEmployee test1 = new BasePlusCommissionEmployee(0729, Brandon, Koo,  );
+	}
+
+}

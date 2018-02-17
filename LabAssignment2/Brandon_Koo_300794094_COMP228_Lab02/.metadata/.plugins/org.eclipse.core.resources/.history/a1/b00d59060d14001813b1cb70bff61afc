@@ -1,0 +1,87 @@
+package Brandon_Koo_Exercise01;
+
+import java.util.Scanner;
+
+public class QuestionBankTest {
+	static int n;
+	static Scanner scanner = new Scanner( System.in );
+	public static void main(String[] arg)
+	{
+		n = 1;
+		while(n == 1) {
+		QuestionBank.simulateQuestion(0);		
+		System.out.print( "Type some data for the program: " );
+		// Scanner to read a line of text from the user.
+		String anwser = scanner.nextLine();		
+		// put into the inputanswer
+		QuestionBank.inputAnswer(Integer.parseInt(anwser));
+		QuestionBank.checkAnswer();
+		if (QuestionBank.checkAnswer() != false)
+		{
+			n = 0;
+		}
+		System.out.println("-------------------------------------------------");
+		}
+		/*
+		n = true;
+		while (n == true) {
+			QuestionBank.simulateQuestion(1);
+			System.out.print( "Type some data for the program: " );
+			// Scanner to read a line of text from the user.
+			int anwser = Integer.parseInt(scanner.nextLine());
+			// put into the inputanswer
+			QuestionBank.inputAnswer(anwser);
+			QuestionBank.checkAnswer();
+			if (QuestionBank.checkAnswer() == false)
+			{
+				n = false;
+			}
+			System.out.println("-------------------------------------------------");
+		}
+		n = true;
+		while (n == true) {
+			QuestionBank.simulateQuestion(2);
+			System.out.print( "Type some data for the program: " );
+			// Scanner to read a line of text from the user.
+			int anwser = Integer.parseInt(scanner.nextLine());
+			// put into the inputanswer
+			QuestionBank.inputAnswer(anwser);
+			QuestionBank.checkAnswer();		
+			if (QuestionBank.checkAnswer() == false)
+			{
+				n = false;
+			}
+			System.out.println("-------------------------------------------------");
+		}
+		n = true;
+		while (n == true) {
+			QuestionBank.simulateQuestion(3);
+			System.out.print( "Type some data for the program: " );
+			// Scanner to read a line of text from the user.
+			int anwser = Integer.parseInt(scanner.nextLine());
+			// put into the inputanswer
+			QuestionBank.inputAnswer(anwser);
+			QuestionBank.checkAnswer();
+			if (QuestionBank.checkAnswer() == false)
+			{
+				n = false;
+			}
+			System.out.println("-------------------------------------------------");
+		}
+		n = true;
+		while (n == true) {
+			QuestionBank.simulateQuestion(4);
+			System.out.print( "Type some data for the program: " );
+			// Scanner to read a line of text from the user.
+			int anwser = Integer.parseInt(scanner.nextLine());
+			// put into the inputanswer
+			QuestionBank.inputAnswer(anwser);
+			QuestionBank.checkAnswer();
+			if (QuestionBank.checkAnswer() == false)
+			{
+				n = false;
+			}
+		} */
+		
+	}
+}

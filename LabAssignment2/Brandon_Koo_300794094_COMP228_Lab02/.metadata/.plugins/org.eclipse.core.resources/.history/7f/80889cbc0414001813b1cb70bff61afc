@@ -1,0 +1,13 @@
+package Brandon_Koo_Exercise01;
+
+public class QuestionBankTest {
+	
+	public static void main(String[] arg)
+		{
+		QuestionBank.simulateQuestion(0);
+		QuestionBank.simulateQuestion(1);
+		QuestionBank.simulateQuestion(2);
+		QuestionBank.simulateQuestion(3);
+		QuestionBank.simulateQuestion(4);
+		}
+}

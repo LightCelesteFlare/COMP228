@@ -1,0 +1,81 @@
+
+public class BasePlusCommissionEmployee {
+
+	private int EmployeeID;
+	private String FName;
+	private String LName;
+	private double BaseSalary = 200;		// Default = $200.00
+	private double GrossSales;
+	private double CRates = 0.1;	// Commission rate = default 0.1;
+	
+	public BasePlusCommissionEmployee(int ID, String Fname, 
+			String Lname, double BSalary) 
+	{
+		if(ID > 0)
+			this.EmployeeID = ID;
+		if(Fname != null || Fname != "")
+			this.FName = Fname;
+		if(Lname != null || Lname != "")
+			this.LName = Lname;
+		if(BSalary > 0) {
+			this.BaseSalary = BSalary;
+		}
+	}
+	
+	public BasePlusCommissionEmployee(int ID, String Fname, 
+			String Lname, double BSalary, double GSale, double CRates) 
+	{
+		if(ID > 0)
+			this.EmployeeID = ID;
+		if(Fname != null || Fname != "")
+			this.FName = Fname;
+		if(Lname != null || Lname != "")
+			this.LName = Lname;
+		if(BSalary > 0) {
+			this.BaseSalary = BSalary;
+		}	
+		setGrossSales(GSale);
+		setCommissionRate(CRates);
+	}
+	
+	// Properties
+	public int getEmployeeID() {
+		return EmployeeID;
+	}
+	public String getFName() {
+		return FName;
+	}
+	public String getLName() {
+		return LName;
+	}
+	public double getBaseSalary() {
+		return BaseSalary;
+	}
+	public double getGrossSales() {
+		return GrossSales;
+	}
+	public void setGrossSales(double grossSales) {
+		this.GrossSales = grossSales;
+	}
+	public double getCommissionRate() {
+		return CRates;
+	}
+	public void setCommissionRate(double cRates)
+	{
+		if (cRates > 0.1 && cRates <= 1.0)
+		this.CRates = cRates;
+	}
+	
+	// Methods
+	public double DoubleEarning()
+	{
+		return ((getCommissionRate() * getGrossSales()) + getBaseSalary());
+	}
+	@Override
+	public String toString() {
+		return "Employee ID=" + getEmployeeID() + ", Name:" + getFName()
+				+ ", Last Name=" + getLName() + ", Base Salary:" + getBaseSalary() + ", Gross Sales:"
+				+ getGrossSales();
+	}
+	
+}

@@ -1,0 +1,57 @@
+
+public class BasePlusCommissionEmployee {
+
+	private int EmployeeID;
+	private String FName;
+	private String LName;
+	private double BaseSalary = 200;		// Default = $200.00
+	private double GrossSales;
+	private double CRates = 0.1;	// Commission rate = default 0.1;
+	public BasePlusCommissionEmployee(int ID, String Fname, 
+			String Lname, double BSalary, double GSale, double CRates) 
+	{
+		this.EmployeeID = ID;
+		this.FName = Fname;
+		this.LName = Lname;
+		this.BaseSalary = BSalary;
+		this.GrossSales = GSale;
+		if (CRates < 0 || CRates > 1)
+		{
+		this.CRates = CRates;
+		}
+		if (CRates > 0 || CRates < 1)
+		{
+			CRates = this.CRates;
+		}
+	}
+	public int getEmployeeID() {
+		return EmployeeID;
+	}
+	public String getFName() {
+		return FName;
+	}
+	public String getLName() {
+		return LName;
+	}
+	public double getBaseSalary() {
+		return BaseSalary;
+	}
+	public double getGrossSales() {
+		return GrossSales;
+	}
+	public void setGrossSales(double grossSales) {
+		GrossSales = grossSales;
+	}
+	public void DoubleEarning(double doubled)
+	{
+		doubled = (this.BaseSalary + this.GrossSales * this.CRates);
+		return;
+	}
+	@Override
+	public String toString() {
+		return "BasePlusCommissionEmployee [Employee ID=" + getEmployeeID() + ", Name:" + getFName()
+				+ ", Last Name=" + getLName() + ", Base Salary:" + getBaseSalary() + ", Gross Sales:"
+				+ getGrossSales() + "]";
+	}
+	
+}

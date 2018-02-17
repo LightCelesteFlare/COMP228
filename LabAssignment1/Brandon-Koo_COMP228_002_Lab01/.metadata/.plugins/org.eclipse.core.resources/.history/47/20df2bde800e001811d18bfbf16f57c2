@@ -1,0 +1,22 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CheckingAccountTest {
+
+	@Test
+	public void test() {
+		CheckingAccount test1 = new CheckingAccount(123, "Smith", 150);
+		
+		// balance below 50 
+		CheckingAccount test2 = new CheckingAccount(52, "Brandon", 200);
+		
+		// print 2est1
+		System.out.println(test1.toString());
+		System.out.println(test1.withdraw(40));
+		System.out.println(test1.getAccountBalance());
+		
+		// print test2
+		System.out.println(test2.toString());
+	}
+}

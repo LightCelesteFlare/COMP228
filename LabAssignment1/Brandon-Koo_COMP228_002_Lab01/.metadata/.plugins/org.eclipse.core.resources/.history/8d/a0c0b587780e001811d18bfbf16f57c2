@@ -1,0 +1,15 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CheckingAccountTest {
+
+	@Test
+	public void testWithdraw() {
+		CheckingAccount test = new CheckingAccount();
+		double result = test.withdraw(200);
+		assertEquals(400, result);
+	}
+
+
+}

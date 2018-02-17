@@ -1,0 +1,135 @@
+package Brandon_Koo_Exercise01;
+
+import java.security.SecureRandom;
+
+public class QuestionBank {
+	// Variables
+	private static final SecureRandom randomObject = new SecureRandom();
+	
+	int Randnum = 0;
+	int Correct;
+	String Anwser;
+	String[] Question = new String[] {"",
+							"",
+							"",
+							"",
+							"",
+							"",};
+	// Properties
+
+	// Methods
+	public void simulateQuestion(int num)
+	{
+		// #1 Linear in value
+		if(num == 0)
+		{
+		this.Correct = 1;
+		}
+		// #2 Contiguous
+		if(num == 1)
+		{
+		this.Correct = 1;
+		}
+		// #3 Homogenous
+		if(num == 2)
+		{
+		this.Correct = 1;
+		}
+		// #4 Static
+		if(num == 3)
+		{
+		this.Correct = 1;
+		}
+		// #5 Access to elements is random
+		if(num == 4)
+		{
+		this.Correct = 1;
+		}
+		// Not sequental 
+	}
+	
+	public void checkAnswer()
+	{
+		if (this.Correct == this.Answer)
+		{
+			generateMessage("Correct");
+			return;
+		}
+		else
+		{
+			generateMessage("Incorrect");
+			return;
+		}
+	}
+	
+	public static void generateMessage(String Toggle)
+	{
+		if (Toggle == "Correct")
+		{
+			switch(randomObject.nextInt(4))
+			{
+				case 0:
+				{
+					System.out.println("Good!");
+					break;
+				}
+				case 1:
+				{
+					System.out.println("Excellent!");
+					break;
+				}
+				case 2:
+				{
+					System.out.println("Keep up the good work!");
+					break;
+				}
+				case 3:
+				{
+					System.out.println("Nice work!");
+					break;
+				}
+				default:
+				{
+					System.out.println("Error");
+					break;
+				}
+			}		
+		}
+		if (Toggle == "Incorrect")
+		{
+			switch(randomObject.nextInt(4))
+			{
+				case 0:
+				{
+					System.out.println("No. Please try again!");
+					break;
+				}
+				case 1:
+				{
+					System.out.println("Wrong, Try once more");
+					break;
+				}
+				case 2:
+				{
+					System.out.println("incorrect, Don't give up!");
+					break;
+				}
+				case 3:
+				{
+					System.out.println("No. Keep trying..");
+					break;
+				}
+				default:
+				{
+					System.out.println("Error");
+					break;
+				}
+			}		
+		}
+	}
+	
+	public static void inputAnswer()
+	{
+		
+	}
+}

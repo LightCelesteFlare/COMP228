@@ -1,0 +1,133 @@
+package Brandon_Koo_Exercise01;
+
+import java.security.SecureRandom;
+
+public class QuestionBank {
+	// Variables
+	private static final SecureRandom randomObject = new SecureRandom();
+	
+	int randnum = 0;
+	static int correct;
+	int answer;
+	
+	// Properties
+
+	// Methods
+	public static void simulateQuestion(int quest)
+	{
+		// #1 Linear in value
+		if(quest == 0)
+		{
+			System.out.println("Inheritance are: \n 1: subclass  2: class \n 3: array %5 4: attributes");
+			correct = 1;
+		}
+		// #2 Contiguous
+		if(quest == 1)
+		{
+			System.out.println("What is not a normally phase step: \n 1: compile  2: load \n 3: create 4: verify");
+			correct = 3;
+		}
+		// #3 Homogenous
+		if(quest == 2)
+		{
+			System.out.println("Steve are: 1: subclass  2: class  3: array 4: attributes");
+			correct = 0;
+		}
+		// #4 Static
+		if(quest == 3)
+		{
+		
+		}
+		// #5 Access to elements is random
+		if(quest == 4)
+		{
+		
+		}
+		// Not sequental 
+	}
+	
+	public void checkAnswer()
+	{
+		if (this.correct == this.answer)
+		{
+			generateMessage("Correct");
+			return;
+		}
+		else
+		{
+			generateMessage("Incorrect");
+			return;
+		}
+	}
+	
+	public static void generateMessage(String Toggle)
+	{
+		if (Toggle == "Correct")
+		{
+			switch(randomObject.nextInt(4))
+			{
+				case 0:
+				{
+					System.out.println("Good!");
+					break;
+				}
+				case 1:
+				{
+					System.out.println("Excellent!");
+					break;
+				}
+				case 2:
+				{
+					System.out.println("Keep up the good work!");
+					break;
+				}
+				case 3:
+				{
+					System.out.println("Nice work!");
+					break;
+				}
+				default:
+				{
+					System.out.println("Error");
+					break;
+				}
+			}		
+		}
+		if (Toggle == "Incorrect")
+		{
+			switch(randomObject.nextInt(4))
+			{
+				case 0:
+				{
+					System.out.println("No. Please try again!");
+					break;
+				}
+				case 1:
+				{
+					System.out.println("Wrong, Try once more");
+					break;
+				}
+				case 2:
+				{
+					System.out.println("incorrect, Don't give up!");
+					break;
+				}
+				case 3:
+				{
+					System.out.println("No. Keep trying..");
+					break;
+				}
+				default:
+				{
+					System.out.println("Error");
+					break;
+				}
+			}		
+		}
+	}
+	
+	public void inputAnswer(int answer)
+	{
+		this.answer = answer;
+	}
+}
