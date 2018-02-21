@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Brandon_Koo_300794094_COMP228_Lab02/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithLibs/JavaSource"/>
+	<classpathentry kind="src" path="Brandon_Koo_300794094_COMP228_Lab02/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithoutLibs/JavaSource"/>
+	<classpathentry kind="src" path="Brandon_Koo_300794094_COMP228_Lab02/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithoutLibs/JavaSource"/>
+	<classpathentry kind="src" path="Brandon_Koo_300794094_COMP228_Lab02/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/JavaSource"/>
+	<classpathentry kind="src" path="Brandon_Koo_300794094_COMP228_Lab02/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFKickStartWithoutLibs/JavaSource"/>
+	<classpathentry kind="src" path="Brandon_Koo_300794094_COMP228_Lab02/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFKickStartWithoutLibs/JavaSource"/>
+	<classpathentry kind="src" path="Brandon_Koo_300794094_COMP228_Lab02/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFKickStartWithoutLibs/JavaSource"/>
+	<classpathentry kind="src" path="Brandon_Koo_300794094_COMP228_Lab02/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFKickStartWithoutLibs/JavaSource"/>
+	<classpathentry kind="src" path="Brandon_Koo_300794094_COMP228_Lab02/Exercise_01/src"/>
+	<classpathentry kind="src" path="Brandon_Koo_300794094_COMP228_Lab02/Exercise_02/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
