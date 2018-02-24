@@ -1,0 +1,48 @@
+
+public class Address {
+	private int House;
+	private String Street;
+	private String City;
+	private String Zipcode;
+	
+	public Address(int house, String street, String city, String zipcode)
+	{
+		setHouse(house);
+		setStreet(street);
+		setCity(city);
+		setZipcode(zipcode);
+	}
+	// -----------------
+	// get and set House
+	public int getHouse() {
+		return House;
+	}
+	public void setHouse(int house) {
+		House = house;
+	}
+	// -----------------
+	// get and set Street
+	public String getStreet() {
+		return Street;
+	}
+	public void setStreet(String street) {
+		Street = street;
+	}
+	// -----------------
+	// get and set City
+	public String getCity() {
+		return City;
+	}
+	public void setCity(String city) {
+		City = city;
+	}
+	// ----------------
+	// get and set ZipCode
+	public String getZipcode() {
+		return Zipcode;
+	}
+	public void setZipcode(String zipcode) {
+		Zipcode = zipcode;
+	}
+	
+}

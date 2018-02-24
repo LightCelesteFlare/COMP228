@@ -1,0 +1,31 @@
+// Fig. 8.9: EmployeeTest.java
+// Composition demonstration.
+
+public class EmployeeTest {
+   public static void main(String[] args) {
+      Date birth = new Date(7, 24, 1949);
+      Date hire = new Date(3, 12, 1988);
+      
+      //Address (house, street, city, zipcode)
+      Address address = new Address(42, "50 Sander Dr.", "Toronto", "V4M2J3");
+      
+      Employee employee = new Employee("Bob", "Blue", birth, hire, address);
+
+      System.out.println(employee);
+      
+      // update month in hiredate (month, day, year)
+      hire = new Date(5);
+      // print the object
+      System.out.println("---------------------------------");
+      System.out.println(employee);
+      // update street name
+      System.out.println("---------------------------------");
+      address = new Address(42,"Banker street");
+      // print employee data
+      // print only the hiredate of employee
+      // print address of employee
+      // update the last name of employee to Carlos
+      // print first name and last name of the employee
+   } 
+} 
+
