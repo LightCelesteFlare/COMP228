@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/CodeExamples_Ch10/src/Interface_Polymorphism/PayableInterfaceTest.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Interface_Polymorphism.PayableInterfaceTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="CodeExamples_Ch10"/>
+</launchConfiguration>

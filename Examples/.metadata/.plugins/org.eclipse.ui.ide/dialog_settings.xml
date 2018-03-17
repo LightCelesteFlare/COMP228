@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\300794094\Downloads\Code-Examples_Ch09-11.zip"/>
+		<item value="C:\Users\300794094\Downloads\Code-Example_Ch02.zip"/>
+		<item value="C:\Users\300794094\Downloads\Code-Project-Examples_Ch07-Arrays.zip"/>
+		<item value="C:\Users\300794094\Downloads\Code-Project-Examples_Ch06-Methods.zip"/>
+		<item value="C:\Users\300794094\Downloads\Code-Example_Ch03.zip"/>
+		<item value="C:\Users\300794094\Downloads\Code_Project_Examples_Ch08_Advance_Classes.zip"/>
+	</list>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+</section>

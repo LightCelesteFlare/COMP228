@@ -1,0 +1,11 @@
+package Payroll_Inheritance_Hierarchy;
+
+public class HourlyWakes extends Employee {
+	private double Rate;
+	private double Hours;
+	
+	public HourlyWakes(double rate, double hours) {
+		this.Rate = rate;
+		this.Hours = hours;
+	}
+}
